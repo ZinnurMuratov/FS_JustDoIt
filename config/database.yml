@@ -1,0 +1,23 @@
+
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  username: justDoItAdmin
+  password: 1234
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+
+development:
+  <<: *default
+  database: justDoItDB
+.
+test:
+  <<: *default
+  database: justDoItDB
+
+production:
+  <<: *default
+  database: justDoItDB
