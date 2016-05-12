@@ -6,8 +6,28 @@
 
 # Ignore bundler config.
 /.bundle
+/.idea/*
 
 # Ignore all logfiles and tempfiles.
 /log/*
 !/log/.keep
 /tmp
+
+
+*.rbc
+capybara-*.html
+.rspec
+/log
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/public/system
+/coverage/
+/spec/tmp
+**.orig
+rerun.txt
+pickle-email-*.html
+config/secrets.yml
+
+/vendor/bundle
+
+bower.json
